@@ -1,4 +1,7 @@
 // scripts/seed.js
+
+const BASE_URL = process.env.BASE_URL || 'http://localhost:5000';
+
 require("dotenv").config();
 const mongoose = require("mongoose");
 const Category = require("../src/models/category");
@@ -259,7 +262,7 @@ console.log(`✅ Created ${ads.length} ads`);
     Furthermore, fashion can affect confidence and self-esteem. Wearing clothes that make someone feel comfortable and confident can improve how they present themselves in daily life. This is why many people say, “Dress how you want to be addressed.” Clothing can influence first impressions, communication, and even opportunities.
 
     In conclusion, fashion is a dynamic and meaningful part of human society. It has evolved from basic survival clothing into a powerful tool for identity, culture, creativity, and communication. As trends continue to change, one thing remains constant: fashion will always be a reflection of who we are and the world we live in.`,
-    featuredImage: "uploads/articles/evolutionoffashion.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/evolutionoffashion.png",
     category: fashionCategory._id,
     author: olusogaFeyifunmi._id,
     tags: ["trends", "spring", "fashion week"],
@@ -325,7 +328,7 @@ console.log(`✅ Created ${ads.length} ads`);
     Eco-friendly fashion isn’t a trend — it’s a lifestyle shift. By choosing brands and shops that value the planet and people, you’re contributing to a fashion future that respects workers, celebrates culture, and protects our environment. 🌱
 
     From Lagos boutiques to online ethical marketplaces, sustainable fashion is where style meets conscience. Are you ready to wear your values?`,
-    featuredImage: "uploads/articles/sustainablefashion.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/sustainablefashion.png",
     category: fashionCategory._id,
     author: okediyaBukunmi._id,
     tags: ["sustainable", "eco-friendly", "ethical fashion"],
@@ -386,7 +389,7 @@ console.log(`✅ Created ${ads.length} ads`);
 
     Because at the end of the day, the best trend you can follow…
     is your own.`,
-    featuredImage: "uploads/articles/streetstyle.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/streetstyle.png",
     category: fashionCategory._id,
     author: okediyaBukunmi._id,
     tags: ["street style", "fashion week", "inspiration"],
@@ -418,7 +421,7 @@ console.log(`✅ Created ${ads.length} ads`);
     Veekee and Femi, who tied the knot in a stylish wedding in February 2024, have continued to share their love story and creative ventures online. This latest chapter, blending glamorous celebration with personal joy, shows just how intentional and inspirational their journey has become.  ￼
 
     With Dubai as the backdrop and loved ones by their side, Veekee James’ baby shower wasn’t just an event it was a cultural moment that fused luxury, emotion, and fashion in a way only she could.`,
-    featuredImage: "uploads/articles/vekkejames1.jpeg",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/vekkejames1.jpeg",
     category: lifestyleCategory._id,
     author: awosusiOluwatomisin._id,
     tags: ["celebrity", "lifestyle"],
@@ -551,7 +554,7 @@ console.log(`✅ Created ${ads.length} ads`);
     Beautiful skin is not a myth — it’s a ritual. With the right ingredients — and patience — you can transform dullness into luminosity and create a complexion that not only glows but also feels deeply healthy.
 
     Want a product recommendation list (budget to luxury) for these ingredients? I can tailor it to your skin type!`,
-    featuredImage: "uploads/articles/bestskincare.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/bestskincare.png",
     category: lifestyleCategory._id,
     author: okediyaBukunmi._id,
     tags: ["skincare", "ingredients", "beauty science"],
@@ -695,7 +698,7 @@ console.log(`✅ Created ${ads.length} ads`);
     A good morning routine doesn’t just organize your day — it protects your energy, focus, and peace before the world gets loud.
 
     Start small. Keep it simple. Make it yours.`,
-    featuredImage: "uploads/articles/morningroutine2.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/morningroutine2.png",
     category: lifestyleCategory._id,
     author: okediyaBukunmi._id,
     tags: ["wellness", "productivity", "habits"],
@@ -782,7 +785,7 @@ console.log(`✅ Created ${ads.length} ads`);
 
     Two years may seem like a long time in politics.
     In democracy, it is barely enough.`,
-    featuredImage: "uploads/articles/image.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/image.png",
     category: newsCategory._id,
     author: okediyaBukunmi._id,
     tags: ["news", "politics", "election"],
@@ -812,7 +815,7 @@ console.log(`✅ Created ${ads.length} ads`);
 
     The consensus across all voices was clear: empowering women is not charity, but disciplined policy, sound economics and a cornerstone of Nigeria’s national transformation.
     The event was witnessed by ministers, governors, lawmakers, civil society organisations, women groups and development partners.`,
-    featuredImage: "uploads/articles/news1.jpeg",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/news1.jpeg",
     category: newsCategory._id,
     author: segunBukola._id,
     tags: ["news", "policy"],
@@ -848,7 +851,7 @@ console.log(`✅ Created ${ads.length} ads`);
     While the registration of new parties widens Nigeria’s democratic space, political observers caution that legal recognition alone does not guarantee electoral relevance. Past election cycles have shown that many registered parties struggle to build nationwide structures, attract credible candidates or mobilise sufficient resources to compete meaningfully at the polls.
 
     For the Democratic Leadership Alliance and the Nigeria Democratic Congress, attention is now expected to shift from the announcement of their registration to their ability to organise effectively, articulate clear political identities and demonstrate seriousness as Nigeria’s long march toward the 2027 general elections continues.`,
-    featuredImage: "uploads/articles/ballotbox.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/ballotbox.png",
     category: newsCategory._id,
     author: faladeObafemi._id,
     tags: ["news", "policy"],
@@ -914,7 +917,7 @@ console.log(`✅ Created ${ads.length} ads`);
     Investors have new frontiers to explore, especially in fields like AI, fintech, and digital infrastructure.
 
     Nigeria’s tech industry is not just growing — it’s maturing. We are witnessing a shift from survival to meaningful impact, where innovation, investment, and digital culture converge to shape the nation’s future.`,
-    featuredImage: "uploads/articles/tech2.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/tech2.png",
     category: featuresCategory._id,
     author: okediyaBukunmi._id,
     tags: ["news", "technology", "business"],
@@ -952,7 +955,7 @@ console.log(`✅ Created ${ads.length} ads`);
     The contrasting fortunes of Beta Glass and Fortis Global Insurance reveal how strategic ownership changes can create opportunities for growth, while poor cost dynamics can undermine financial performance. For investors, these developments emphasize the importance of evaluating both revenue trends and underlying expenses when assessing a company’s financial health.
 
     As companies navigate a complex economic climate, disciplined financial strategies, prudent investment decisions, and sound governance will remain essential to long-term success.`,
-    featuredImage: "uploads/articles/corporatefinance.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/corporatefinance.png",
     category: featuresCategory._id,
     author: elijahGana._id,
     tags: ["news", "finance", "business"],
@@ -972,7 +975,7 @@ console.log(`✅ Created ${ads.length} ads`);
     Financial results show that while the company succeeded in growing revenue, this was outweighed by rising claims expenses and operating costs. Inflationary pressures, higher reinsurance costs, and increased risk exposure across key policy segments contributed significantly to the negative performance. The figures highlight a growing concern in the sector: revenue growth alone is no longer enough to guarantee profitability.
 
     Industry observers note that Fortis Global’s results reflect a broader trend among insurers struggling to balance premium growth with effective risk control. The company has indicated plans to reassess its pricing strategies and strengthen internal controls to improve future performance. As investors and policyholders watch closely, the coming financial year will be critical in determining whether these measures can restore confidence and stability.`,
-    featuredImage: "uploads/articles/globalinsurance.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/globalinsurance.png",
     category: featuresCategory._id,
     author: hoseaOyindamola._id,
     tags: ["news", "finance", "business"],
@@ -999,7 +1002,7 @@ console.log(`✅ Created ${ads.length} ads`);
     Directed with polished precision by Akindele and Tunde Olaoye, the film’s glossy aesthetic, from sleek corporate towers to chaotic family homes, creates a world of aspirational beauty that makes the emotional poverty festering within it all the more stark. Every betrayal, from the driver’s theft to a sister’s guilt tripping, and every moment of silent suffering, from Ronke’s weary eyes to her children’s confusion, builds an overwhelming case for her drastic act. Together, they paint a systemic picture of exploitation, a cycle where personal responsibility is abdicated and trust is relentlessly monetized.
 
     The film’s seismic cultural impact, evidenced by fiery debates on social media and in living rooms across the nation, stems from this piercing accuracy. Audiences did not just watch a story; they saw fragments of their own lives reflected in its drama. Behind the Scenes ultimately becomes a lavish, emotionally charged argument that true strength is not found in endless, self annihilating sacrifice, but in the courageous, often lonely, act of drawing a boundary. It is a landmark in Nollywood’s evolution, a blockbuster that dares to unravel the complex human threads behind a simple headline, proving that the most compelling dramas are those where every character, from the star to the driver, has a story that is intimately, inseparably connected.`,
-    featuredImage: "uploads/articles/funkeakindele.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/funkeakindele.png",
     category: entertainmentCategory._id,
     author: famuyideOluwafolakemi._id,
     tags: ["movies", "entertainment", "nollywood"],
@@ -1031,7 +1034,7 @@ console.log(`✅ Created ${ads.length} ads`);
     The 2026 ceremony reinforced that Afrobeats and African pop are now fixtures on the global charts, not just passing trends. Nigerian artists still dominate the African nominee pool, but Tyla’s repeat win signals that South Africa and East Africa are gaining equal footing in international tastemaking.
     For African creatives, the takeaway is that Grammy recognition is no longer a question of “if” but “when.” The challenge now is to convert that visibility into wins in the top categories, where the industry’s most coveted trophies live. As one Lagos based producer put it, “We’re not begging for a seat anymore. We’re asking for the microphone.”
     In the end, the 2026 Grammys were less about a single African winner and more about a continent’s arrival on the world stage. The music spoke for itself, and the world listened.`,
-    featuredImage: "uploads/articles/tyla.jpeg",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/tyla.jpeg",
     category: entertainmentCategory._id,
     author: famuyideOluwafolakemi._id,
     tags: ["music", "grammys", "entertainment"],
@@ -1055,7 +1058,7 @@ console.log(`✅ Created ${ads.length} ads`);
     However, the news has also sparked conversations around celebrity lifestyle and wealth display, especially amid prevailing economic challenges. While some view such displays as a reward for hard work and success, others argue for a more reserved public portrayal of wealth.
 
     Despite differing opinions, Davido remains one of Africa’s most celebrated music stars, with his lifestyle choices continuing to attract public interest alongside his musical projects.`,
-    featuredImage: "uploads/articles/davido.jpeg",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/davido.jpeg",
     category: entertainmentCategory._id,
     author: dadaOluwasemilore._id,
     tags: ["celebrity", "entertainment", "lifestyle"],
@@ -1117,7 +1120,7 @@ console.log(`✅ Created ${ads.length} ads`);
     In the end, it served as a reminder that while music evolves, legends remain untouchable and comparisons, when handled carelessly, can spark more heat than harmony.
     
     One thing is certain: Nigerian music, past and present, continues to inspire passionate conversations and that, in itself, is part of its power.`,
-    featuredImage: "uploads/articles/starboy.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/starboy.png",
     category: entertainmentCategory._id,
     author: udusiDavid._id,
     tags: ["music", "entertainment", "controversy"],
@@ -1154,7 +1157,7 @@ console.log(`✅ Created ${ads.length} ads`);
     The victory marks an important boost for Germany’s campaign in the women’s ice hockey tournament at Milano Cortina 2026. After a tough opening loss to Sweden earlier in the tournament, today’s result brings the squad level with Japan in the standings and keeps their hopes alive for advancing toward the quarterfinals. 
 
     Japan, despite spirited play later in the game, will need strong results in upcoming matches to remain competitive in Group B`,
-    featuredImage: "uploads/articles/hockeyteam.png",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/hockeyteam.png",
     category: sportsCategory._id,
     author: oyetundeHabeeb._id,
     tags: ["sports", "entertainment",],
@@ -1186,7 +1189,7 @@ console.log(`✅ Created ${ads.length} ads`);
 
     Up Next
     Barcelona’s focus now shifts to upcoming league fixtures and the Copa del Rey semifinal, where they will face Atletico Madrid in a crucial matchup later this month.`,
-    featuredImage: "uploads/articles/3-0.jpeg",
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/3-0.jpeg",
     category: sportsCategory._id,
     author: akinsolaFemi._id,
     tags: ["sports", "entertainment",],
