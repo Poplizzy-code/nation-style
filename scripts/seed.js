@@ -201,6 +201,34 @@ console.log(`✅ Created ${ads.length} ads`);
         bio: "College Footballer, Sport Analyst. Sport News Writer",
         profileImage: "uploads/authors/akinsolafemi.jpeg",
       },
+
+      {
+        name: "Jigo Esther",
+        slug: "jigo-esther",
+        bio: "Jigo Esther is a student of Adeleke University ede, Osun State. She is passionate about making a difference",
+        profileImage: "uploads/authors/estherjigo.jpeg",
+      },
+
+      {
+        name: "Taiwo Precious",
+        slug: "taiwo-precious",
+        bio: "Entertainer",
+        profileImage: "uploads/authors/taiwoprecious.jpeg",
+      },
+
+      {
+        name: "Kayode Oluwatunmise",
+        slug: "kayode-oluwatunmise",
+        bio: "literary enthusiasts",
+        profileImage: "uploads/authors/taiwoprecious.jpeg",
+      },
+
+      {
+        name: "Onyeagoro Chinonso ",
+        slug: "onyeagoro-chinonso ",
+        bio: "sport journalist",
+        profileImage: "uploads/authors/Onyeagorochinonso.jpeg",
+      },
     ]);
     console.log(`✅ Created ${authors.length} authors`);
 
@@ -216,6 +244,10 @@ console.log(`✅ Created ${ads.length} ads`);
     const dadaOluwasemilore = authors.find((a) => a.slug === "dada-oluwasemilore");
     const segunBukola = authors.find((a) => a.slug === "segun-bukola");
     const akinsolaFemi = authors.find((a) => a.slug === "akinsola-femi");
+    const jigoEsther = authors.find((a) => a.slug === "jigo-esther");
+    const taiwoPrecious = authors.find((a) => a.slug === "taiwo-precious");
+    const kayodeOluwatunmise = authors.find((a) => a.slug === "kayode-oluwatunmise");
+    const onyeagoroChinonso = authors.find((a) => a.slug === "onyeagoro-chinonso");
 
     // Create sample articles
     console.log("📝 Creating articles...");
@@ -240,6 +272,32 @@ console.log(`✅ Created ${ads.length} ads`);
 
     const articles = await Article.insertMany([
   // FASHION ARTICLES (4 articles)
+
+  {
+    title: "London Fashion Week Sees New Trend Of Size Diversity On Runway",
+    slug: "London -fashion-Week-sees-new-trend-of-size-diversity-on-runway" + Date.now(),
+    excerpt: "London Fashion Week Sees New Trend Of Size Diversity On Runway",
+    content: `Karoline Vitto's autumn
+    winter 2026 show delivered a pointed reminder that body diversity isn't radical – it can, and should, be standard practice.The Brazilian-born designer presented a runway cast with visible size diversity, from XS through to fuller, curvy models, all wearing the same fluid, body-conscious silhouettes.At a time when industry headlines have questioned the absence of curvier bodies on international catwalks, the show at the BFC NewGen space in London offered a confident reaction.Rather than treating inclusivity as a seasonal theme, Vitto embedded it into the structure of the collection.
+
+    Models of varying proportions wore identical draped dresses, silk separates and sculpted jersey pieces, reinforcing the designer's long-standing position. As she has previously said, she sees herself as a designer who "puts the body first, especially bodies that are overlooked by fashion".Backstage, she framed her work as responsive rather than escapist. "I think it's a reaction to society," she said. "I like to think what is going on and react to it." That reaction materialised this season in a softened, liquid approach to tailoring, with sheer and silk emerging as dominant textures.A cream slip dress set the tone. Cut with fine straps and a central vertical cut-out secured by minimal hardware, it skimmed the torso and gathered gently at the hips.
+
+    The fabric clung without constricting, creating subtle shaping through drape rather than rigid internal structure. On a curvier model, the same piece emphasised natural contours, the cut-out drawing attention to the waist and midriff without apology.Sheer layering continued in an ivory look that paired a softly structured asymmetric top with a translucent skirt. The skirt moved fluidly, catching the light and revealing the outline of the legs beneath. The transparency felt deliberate and controlled, aligned with a broader runway trend towards exposed layering and liquid finishes.
+
+    In deeper tones, silk separates brought richness to the collection. A navy satin bra top worn with a low-slung, asymmetrically draped skirt balanced minimalism with sensuality.The skirt pooled slightly at the hem, creating movement with each step. The simplicity of the cut allowed the focus to remain on the body itself – hips, stomach and shoulders framed rather than disguised.Jersey pieces provided a more sculptural looks. A black halter dress featured asymmetric draping and a ruched side panel that enhanced curves without over-structuring them. A grey midi dress incorporated precise cut-outs at the waist, echoing Vitto's signature interest in framing the torso.Executed in stretch fabric, the silhouette adapted across sizes, demonstrating the brand's technical understanding of fit.Even the more utilitarian looks retained a sensual undercurrent. A cropped grey jacket styled with high-cut briefs and sheer knee socks combined tailoring with exposure, while wide-leg sage trousers were paired with a fitted sleeveless top and elongated scarf detail that created a strong vertical line through the body.
+
+    The collection was in collaboration with the high-street brand Pull&Bear, which introduced an accessible dimension to Vitto's aesthetic. While her hallmark sculptural thinking remained visible in seam placement and hardware accents, the pieces felt wearable: silk slips, fluid skirts and soft jersey dresses that could translate beyond the runway.When asked which woman inspires her most stylistically, Vitto resisted naming an individual. "There's not one single woman," she said, "it's more the idea of a collective of women that represent something intense and beautiful." That collective was reflected in the show's casting and repetition of silhouettes across different body types.If transparency and fluid-finished dressing are emerging as defining trends this season, then Vitto's show offered a deeper reading of both.The fabrics may have been sheer, but the message was opaque: design begins with the body in front of you.`,
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/LondonFashionWeek.jpeg",
+    category: fashionCategory._id,
+    author: olusogaFeyifunmi._id,
+    tags: ["trends", "spring", "fashion week"],
+    isFeatured: true,
+    isTopStory: true,
+    published: true,
+    readTime: 5,
+    views: 1250,
+  },
+
   {
     title: "The Evolution of Fashion",
     slug: "evolution-of-fashion-" + Date.now(),
@@ -424,6 +482,47 @@ console.log(`✅ Created ${ads.length} ads`);
     featuredImage: "https://nation-style.onrender.com/uploads/articles/vekkejames1.jpeg",
     category: lifestyleCategory._id,
     author: awosusiOluwatomisin._id,
+    tags: ["celebrity", "lifestyle"],
+    isFeatured: true,
+    published: true,
+    readTime: 5,
+    views: 2100,
+  },
+
+  {
+    title: "The talented student from Nigeria has discovered a new way to lose excess weight!",
+    slug: "the-talented-student-from-Nigeria-has-discovered-a-new way-to-lose-excess-weight!" + Date.now(),
+    excerpt: "The talented student from Nigeria has discovered a new way to lose excess weight!",
+    content:`This year at a forum in Europe, something incredible happened. The entire auditorium stood up and applauded the speaker on stage for 10 minutes. The speaker was Naomi Odhiambo, a student from Nigeria. It was she who proposed a unique formula that can effectively help shed extra kilograms.
+    How this new product can help many people and why citizens of Nigeria can get it at a huge discount - that's what we'll see today.
+
+    Naomi Odhiambo
+    Reporter: Naomi Odhiambo, you are considered one of the most intelligent students in the world. Why did you decide to deal with the problem of excess weight?
+    Naomi Odhiambo: I don't have too much desire to talk about it in public, my motivation is purely private. A few years ago, my mother died of hypertension, she had been overweight for years. She was fine after all and had been trying to lose weight for a while, and a moment later a stroke killed her in her sleep. And that's it, she was gone. My grandmother also died for the same reason. I started studying after his death to understand the problems connected to excess weight and how to solve them.
+    During the past three years I have been focusing a lot on this issue. On the new method of combating weight problems that everyone is talking about now, a method that came out while I was writing my thesis. I saw I'd created something new, I could never have thought of raising so much interest from this number of structures.
+    Reporter: What structures are we talking about?
+    Naomi Odhiambo: As soon as a publication appeared about my method to get rid of the excess weight, I started to receive offers to sell my idea. The first were the French, who offered me €400.000. The last were the Americans, they offered me $2.500.000. Now I had to change my phone number and unsubscribe from social networks, because people and possible buyers just can't leave me alone.
+    Reporter: But as far as I know you have not yet sold the formula, right?
+    Naomi Odhiambo: Yes, it will probably sound strange, but I didn't create it to make some stranger rich.
+    So, when I was offered to participate in the development of a formula to address weight-related issues, I immediately agreed. We developed it in collaboration with top endocrinology and dietology experts from various clinics. It was amazing. Now, this formula has undergone all clinical trials and is available to the general public.
+    The development of this product was coordinated by investor and philanthropist Carsten Walz. We asked him to tell us about this new project and its plans.
+
+    Carsten Waltz
+    Reporter: What does the idea of Naomi Odhiambo consist of, in a nutshell? Is it true that this product helps people fight excess weight?
+    Carsten Waltz: Naomi Odhiambo's idea is an impressive discovery, it can be called a guide discovery because it just shows the fastest way to lose weight. And we're talking about a method that is helpful throughout life. It's called Lipocarnit.
+    Lipocarnit is a product that should be taken strictly according to the instructions. It contains extracts that accelerate the fat-burning process significantly! This supplement speeds up metabolism, restores the endocrine system, stimulates tissue regeneration, and works wonders in reducing hunger. It is a completely neutral product, merely an active stimulator of natural human processes. As fat burning occurs through a rapid metabolic process, diets will become a thing of the past. The essence is that Lipocarnit has no side effects!
+    Here are the visible results of the women who participated in the tests with «Lipocarnit» in Nigeria:
+    Results after using Lipocarnit.
+    (Results may vary)
+    Reporter: Awesome! Will this product go on sale in pharmacies? And at what price?
+    Carsten Waltz: You will be aware that as soon as they understood the effectiveness of the product , the pharmacists attacked us on all fronts. As a matter of fact, they had already offered large sums to Naomi Odhiambo to buy the formula. But not to sell it. Simply to prevent the product from being sold. Fighting excess weight is one of the most profitable directions in the pharmaceutical business. In the United States alone, patches for billions of dollars are sold every year. Our product can radically change the situation on the market.
+    Pharmaceutical networks are partners of pharmaceutical companies and therefore they do each other favors. Obviously the important thing is to sell.
+    Reporter: And how do you get the product if it is not for sale in pharmacies?
+    Carsten Waltz: We've decided that if the pharmacists get in our way, we can easily do without them. We have organised a direct distribution of Lipocarnit. We have evaluated different types of possibilities and we have chosen the most effective one. Lipocarnit is not sold in pharmacies! Therefore, all those who wish to receive Lipocarnit with a discount of up to 50% can participate in the prize draw! Your geographical position is not important, we can ship the product anywhere in Nigeria.
+    We have launched a large scale advertising campaign in all media to draw people's attention to this product.`,
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/Thetalentedstudent3.jpeg",
+    category: lifestyleCategory._id,
+    author: jigoEsther._id,
     tags: ["celebrity", "lifestyle"],
     isFeatured: true,
     published: true,
@@ -709,6 +808,71 @@ console.log(`✅ Created ${ads.length} ads`);
   },
 
   // NEWS ARTICLES (3 articles)
+
+  {
+    title: "Failed Benin Coup Prompts ECOWAS Intervention in West Africa",
+    slug: "Failed-Benin-coup-prompts-ECOWAS-intervention-in-West-Africa" + Date.now(),
+    excerpt: "Failed Benin Coup Prompts ECOWAS Intervention in West Africa",
+    content:`
+    A failed military coup in the Republic of Benin on 7 December 2025 prompted a swift response from the Economic Community of West African States (ECOWAS), highlighting the bloc’s renewed role in maintaining regional stability.
+
+    Early that morning, a faction of Beninese soldiers appeared on national television declaring they had seized power, suspended the constitution, and dissolved state institutions. The group, identifying itself as the Military Committee for Refoundation, named Lieutenant-Colonel Pascal Tigri as its leader. Gunfire erupted near the presidential residence and Camp Togbin in Cotonou, causing panic among residents and raising alarm across West Africa.
+    Within hours, loyalist elements of the Beninese armed forces regained control, and Interior Minister Alassane Seidou announced that the coup had been foiled. He urged citizens to continue daily activities, emphasizing that constitutional order had been restored.
+
+    ECOWAS condemned the attempted takeover and authorised the deployment of its standby regional force, with troops from Nigeria, Côte d’Ivoire, Ghana, and Sierra Leone entering Benin to assist in stabilizing key areas and supporting government forces. Nigerian military aircraft were reportedly involved in operations that helped dislodge the mutineers from strategic locations, marking one of the bloc’s most assertive interventions in recent years.
+
+    The incident has drawn 
+    attention to ECOWAS’s role in defending democracy, particularly following a series of successful coups in Mali, Burkina Faso, Niger, and Guinea-Bissau over the past few years. Analysts note that the rapid collapse of the Benin coup reflected the loyalty of key security forces and the effectiveness of regional cooperation.
+
+    International bodies including the African Union and the United Nations condemned the attempted coup, calling it a serious threat to regional stability and emphasizing the need to uphold constitutional governance.
+
+    Approximately 200 ECOWAS soldiers remained in Benin in the days following the failed takeover to support local authorities and ensure security, while investigations continue to identify and apprehend remaining plotters. ECOWAS leaders reiterated their commitment to democratic principles, stressing coordinated action and the protection of constitutional order across the region.
+
+    Benin has long been considered one of West Africa’s more stable democracies, with uninterrupted constitutional governance since the early 1990s. While the failed coup is a temporary crisis, it underscores the ongoing political challenges in West Africa and the importance of regional mechanisms to maintain peace and democratic continuity.`,
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/FailedBeninCoup .jpeg",
+    category: newsCategory._id,
+    author: faladeObafemi._id,
+    tags: ["news", "politics", "election"],
+    isBreaking: true,
+    isFeatured: true,
+    published: true,
+    readTime: 3,
+    views: 2500,
+  },
+
+
+  {
+    title: "2027: ADC Vows Mass Mobilisation Over Electoral Act",
+    slug: "ADC-vows-mass-mobilisation-over-electoral-act" + Date.now(),
+    excerpt: "ADC Vows Mass Mobilisation Over Electoral Act",
+    content: `The African Democratic Congress (ADC) on Thursday said it would mobilise Nigerians across the country to protect the integrity of future elections. The party accused President Bola Ahmed Tinubu of weakening democracy by signing the amended Electoral Act into law.
+
+    The opposition party made this known in a statement issued by its National Publicity Secretary, Bolaji Abdullahi. He questioned what the party described as the unnecessary haste with which the president approved the bill despite public objections.
+
+    According to the statement, “With the alarmingly speedy assent to the Electoral Act Amendment Bill, President Bola Ahmed Tinubu has signed the death warrant on credible elections and, by so doing, set Nigeria’s democracy back by several decades.”
+
+    The party also argued that although the President said he was strengthening democracy by signing the bill, the action has instead damaged the system. It claimed that the amendment creates confusion and gives too much power in the collation and transmission of election results.
+
+    ADC further raised concerns about how quickly the amendment was passed and signed into law. The party said this raises questions about the government’s confidence in conducting a transparent election process.
+
+    “It is quite instructive that despite claiming to control more than 30 state governments and commanding a majority in both chambers of the National Assembly, the extraordinary haste with which this amendment was passed and signed raises the unavoidable question of why a government that boasts of political dominance would rush changes to the electoral framework unless it harbours deep-seated doubts about submitting itself to a truly transparent and competitive process,” the statement said.
+
+    The party also said it is concerned about what the amendment could mean for Nigeria’s upcoming elections. It warned that without clear guarantees of electronic transparency, citizens may feel the need to physically protect their votes to avoid differences between results at polling units and collation centres, as seen in the past.
+
+    “As a duly constituted political party in the Federal Republic of Nigeria, the ADC affirms in the strongest terms that we are ready and prepared to defend the sanctity of Nigeria’s democracy using every constitutional and lawful means available to us.
+
+    “We will mobilise Nigerians toward vigilance, lawful participation, and unity in defence of their constitutional rights. We believe that the will of the people must prevail and that no law, however hastily enacted, can extinguish the democratic aspirations of a free nation,” the ADC stated.`,
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/2027ADCVowsMassMobilisationOverElectoralAct.jpeg",
+    category: newsCategory._id,
+    author: segunBukola._id,
+    tags: ["news", "politics", "election"],
+    isBreaking: true,
+    isFeatured: true,
+    published: true,
+    readTime: 3,
+    views: 2500,
+  },
+
   {
     title: "Nigeria 2027: The Election that will Define a Generation",
     slug: "nigeria-2027-election-" + Date.now(),
@@ -862,6 +1026,46 @@ console.log(`✅ Created ${ads.length} ads`);
 
   // FEATURES ARTICLES (3 articles)
   {
+    title: "Nigeria's corruption",
+    slug: "Nigeria's-corruption" + Date.now(),
+    excerpt: "Nigeria's corruption",
+    content: `Nigeria- A country that seemingly is not destined for progress. A country that continuously kills the dreams of its own people. These unending accusations, which may seem morbid to anyone ignorant about the country’s history, have grown so thick that The amount of Nigerians who believe in the country are less than the ones who still do. 
+    The country has had histories repeat themselves that one cannot help but wonder if the country is stuck in a loop that symbolizes suffering and backwardness. In an unending show of disorganization, popular singer, Eedris Abdul kareem, in 2004, released a diss track at the then administration which was under President Obasanjo. In the song, Abdul Kareem sang “Nigeria jaga jaga, everything scatter scatter, poor man dey suffer suffer, Gbosa!”
+    The song annoyed President Obasanjo so much that he cursed Abdul Kareem and the song was banned on radio. The song ,which is in no doubt is Abdul Kareem’s biggest hit, has been remixed four times. 
+    Nigeria is in such a bad cycle that even  after 19 years, the song still stands. Lyrics like “419 in Nigeria” jolts us to the reality of fraud in Nigeria. The vice which has been remixed into different names from “419” to “yahoo yahoo” to “fraud” to “working boys” shows the appalling state of corruption in Nigeria. The justification that some of these people who engage in cyber crime give are “wetin poor man go do” or “we’re taking back what was originally ours”, the poverty rate in Nigeria after the highlight of the 2022 multidimensional poverty index survey of 2022 revealed that 63%, which translates to 133million people living within Nigeria are living in multidimensional poverty.
+    Some lyrics of The song can be linked to the 2023 elections, lyrics like “poor man suffer suffer” it  has been a well established tradition during elections for campaign materials to be sent out to poor   Nigerians, we’ve had Nigerians sell votes for less than ten thousand naira, this highlights how the   poverty of the average Nigerian is targeted and aids bribery during elections.  The 2023 election saw   the rise of bizarre claims, with the most rampant being the allegation that the Presidential elect was  a drug lord. 
+    The song comes to mind again by bringing up a scenario of where another convicted man went on ahead to become the president of Liberia, lyrics like “Eedris, where Charles Taylor Dey now?, e Dey live big life for Calabar, that na Liberia mafia for Nigeria” this verse of the song drives home a message about how Nigerians are so indifferent to Evil. Throwing shade at Nigeria by saying “that na Liberia mafia for Nigeria”. The same issue that Nigerians are currently having.
+    The wod making up for what has been done .`,
+    featuredImage: "uploads/articles/countrydestinedforprogress.png",
+    category: lifestyleCategory._id,
+    author: kayodeOluwatunmise._id,
+    tags: ["celebrity", "lifestyle"],
+    isFeatured: true,
+    published: true,
+    readTime: 5,
+    views: 2100,
+  },
+  {
+    title: "NIGERIA’S VICIOUS CYCLE OF CORRUPTION, POVERTY AND POLITICS",
+    slug: "Nigeria-vicious-cycle-of-corruption" + Date.now(),
+    excerpt: "NIGERIA’S VICIOUS CYCLE OF CORRUPTION, POVERTY AND POLITICS",
+    content:`Nigeria- A country that seemingly is not destined for progress. A countrythatcontinuously kills the dreams of its own people. These unending accusations, which mayseemmorbid to anyone ignorant about the country’s history, have grown so thick that The amountofNigerians who believe in the country are less than the ones who still do. 
+    The country has had histories repeat themselves that one cannot help but wonder if the country is stuck in a loop that symbolizes suffering and backwardness. In an unending show of disorganization, popular singer, Eedris Abdul kareem, in 2004, released a diss track at the then administration which was under President Obasanjo. In the song, Abdul Kareem sang “Nigeria jaga jaga, everything scatter scatter, poor man dey suffer suffer, Gbosa!”
+    The song annoyed President Obasanjo so much that he cursed Abdul Kareem and the song was banned on radio. The song ,which is in no doubt is Abdul Kareem’s biggest hit, has been remixed four times. 
+    Nigeria is in such a bad cycle that even  after 19 years, the song still stands. Lyrics lik“419 in Nigeria” jolts us to the reality of fraud in Nigeria. The vice which has been remixeinto different names from “419” to “yahoo yahoo” to “fraud” to “working boys” shows thappalling state of corruption in Nigeria. The justification that some of these people who engagin cyber crime give are “wetin poor man go do” or “we’re taking back what was originally ours”the poverty rate in Nigeria after the highlight of the 2022 multidimensional poverty indesurvey of 2022 revealed that 63%, which translates to 133million people living within Nigeriare living in multidimensional poverty.
+    Some lyrics of The song can be linked to the 2023 elections, lyrics like “poor man suffer suffer”it has been a well established tradition during elections for campaign materials to be sent out topoor Nigerians, we’ve had Nigerians sell votes for less than ten thousand naira, this highlightshow the poverty of the average Nigerian is targeted and aids bribery during elections.  The 2023election saw the rise of bizarre claims, with the most rampant being the allegation that thePresidential elect was a drug lord. 
+    The song comes to mind again by bringing up a scenario of where another convicted man went on ahead to become the president of Liberia, lyrics like “Eedris, where Charles Taylor Dey now?, e Dey live big life for Calabar, that na Liberia mafia for Nigeria” this verse of the song drives home a message about how Nigerians are so indifferent to Evil. Throwing shade at Nigeria by saying “that na Liberia mafia for Nigeria”. The same issue that Nigerians are currently having.
+    The word Moral sounds like a sour milk in Nigerian politics as politicians will use the competence and ethnic sentiments to sweep their wrongdoing under the rug. A perfect example is Olusegun Obasanjo who conducted one of the worst election in history but had keen eye on 2023 presidential election , this is the so called making up for what has been done.`,
+    featuredImage: "uploads/articles/corruptioninnigeria.png",
+    category: featuresCategory._id,
+    author: hoseaOyindamola._id,
+    tags: ["news", "technology", "business"],
+    isTopStory: true,
+    published: true,
+    readTime: 4,
+    views: 1800,
+  },
+  {
     title: "Tech Industry Sees Record Growth",
     slug: "tech-industry-growth-" + Date.now(),
     excerpt: "Innovation drives unprecedented expansion.",
@@ -986,12 +1190,34 @@ console.log(`✅ Created ${ads.length} ads`);
   },
 
   // ENTERTAINMENT ARTICLES (4 articles)
+
+  {
+    title: "Nollywood’s Oversabi Aunty Crosses ₦1.08 Billion at the Box Office",
+    slug: "Nollywood’s-Oversabi-Aunty-crosses-₦1.08-billion-at-the-box-office" + Date.now(),
+    excerpt: "Nollywood’s Oversabi Aunty Crosses ₦1.08 Billion at the Box Office",
+    content: `LAGOS, Nigeria — Nollywood has recorded another major milestone as Oversabi Aunty officially crossed ₦1.08 billion at the Nigerian box office, making it one of the highest-grossing films in the country’s cinema history.
+    According to reports from industry distributors, the film reached the billion-naira mark after weeks of steady ticket sales across cinemas nationwide. The movie was distributed by FilmOne Entertainment, one of the leading film distribution companies in Nigeria.
+    The achievement places Oversabi Aunty among Nollywood’s top box-office earners and shows the growing strength of the local film industry. Cinema analysts say the film’s success can be linked to strong marketing, a loyal fan base, and positive word-of-mouth from viewers.
+    Film critics also note that the movie’s relatable storyline and comedic elements contributed to its popularity. Many fans shared their excitement on social media, encouraging others to watch it in cinemas. This kind of audience engagement played a big role in keeping the film relevant weeks after its release.
+    Industry observers believe this milestone is important not just for the cast and crew, but for Nollywood as a whole. It proves that Nigerian films can compete strongly in cinemas and attract large audiences without relying only on foreign productions.
+    With the continued growth of cinema culture in Nigeria and improved distribution strategies, experts predict that more Nollywood films may reach or even surpass this benchmark in the coming years.
+    For now, Oversabi Aunty stands as another reminder that Nigerian storytelling continues to gain both commercial success and national attention.`,
+    featuredImage: "uploads/articles/oversabiaunty.jpeg",
+    category: entertainmentCategory._id,
+    author: taiwoPrecious._id,
+    tags: ["movies", "entertainment", "nollywood"],
+    isFeatured: true,
+    published: true,
+    readTime: 6,
+    views: 1650,
+  },
+
   {
     title: "Behind the Scenes: Funke Akindele's Latest",
     slug: "behind-the-scenes-review-" + Date.now(),
     excerpt: "A Web of Quiet Sacrifice and Loud Betrayal.",
     content: `<h3>THE CURTAIN CALL: Behind the Scenes — A Web of Quiet Sacrifice and Loud Betrayal</h3>
-      Nollywood’s reigning monarch, Funke Akindele, returns not with a crown, but with a deeply resonant mirror held up to the intricate web of the modern Nigerian family. Her cinematic phenomenon, Behind the Scenes, transcends its record shattering box office success to deliver a meticulously woven tapestry of interconnected lives. This is not merely the story of one woman’s burden, but an ensemble portrait where every character, from the glittering centre to the quiet periphery, embodies a facet of a larger, deeply relatable societal tension.
+    Nollywood’s reigning monarch, Funke Akindele, returns not with a crown, but with a deeply resonantmirror held up to the intricate web of the modern Nigerian family. Her cinematic phenomenon,Behind the Scenes, transcends its record shattering box office success to deliver a meticulouslywoven tapestry of interconnected lives. This is not merely the story of one woman’s burden, but anensemble portrait where every character, from the glittering centre to the quiet periphery,embodies a facet of a larger, deeply relatable societal tension.
 
     At the heart of this storm is Aderonke "Ronke" Faniran, brought to life with a profound, weary grace by Scarlet Gomez. Ronke is the sun around which her family’s universe orbits, a self made real estate mogul whose success has warped her generosity into an expected entitlement. Her world is a symphony of ringing phones and unannounced visits, where her identity is slowly erased by her role as the perennial provider. The film’s audacious central plot, Ronke’s decision to fake her own death, is less a mere twist and more a seismic litmus test for every relationship she holds dear. It is a desperate gambit to answer the haunting question that fuels the entire narrative: is she loved for her essence or for her account balance?
 
@@ -1131,6 +1357,44 @@ console.log(`✅ Created ${ads.length} ads`);
   },
 
   // sports
+  {
+    title: "Vinícius Júnior Alleges Racist Abuse in Champions League Clash",
+    slug: "Vinícius-Júnior-alleges-racist-abuse-in-champions-league-clash" + Date.now(),
+    excerpt: "Vinícius Júnior alleges racist abuse in champions league clash",
+    content: `A Champions League fixture was overshadowed by controversy on Tuesday night after Real Madrid forward Vinícius Júnior reported alleged racist abuse during his side’s encounter with Portuguese club Benfica.
+
+    The Brazilian international, who plays for Real Madrid, informed the referee that he had been subjected to a racial slur during the heated knockout stage match. The game was temporarily halted as officials followed anti-racism protocol before play resumed.
+
+    Allegations During On Field Confrontation
+
+    The alleged incident occurred following a goal celebration involving Vinícius. Reports indicate that Benfica midfielder Gianluca Prestianni was accused of directing a racial insult at the Brazilian winger during an exchange between players. Prestianni has denied the accusation.
+
+    European football’s governing body, UEFA, confirmed it has opened an investigation into the matter. An ethics and disciplinary inspector has reportedly been appointed to review match footage, official reports, and statements from both clubs.
+
+    If the allegations are substantiated, disciplinary measures could range from fines to suspension under UEFA’s strict anti-racism regulations.
+
+    Strong Reactions from the Football Community
+
+    Real Madrid officials expressed full support for their player, stating that racism has no place in football. Teammates also publicly defended Vinícius, praising him for speaking out.
+
+    The manager of Benfica, José Mourinho, addressed the situation after the match. While condemning racism, his remarks about the circumstances surrounding the incident sparked debate among commentators and supporters.
+
+    A Recurring Issue
+
+    This is not the first time Vinícius has faced racist abuse during his professional career. In recent seasons, the winger has been the target of discriminatory chants and insults in stadiums across Europe. Some previous incidents have led to sanctions and legal consequences for offenders.
+
+    The latest episode once again highlights the ongoing struggle against racism in football. Advocacy groups and players’ associations continue to call for stricter enforcement, stronger penalties, and greater education to eradicate discrimination from the sport.
+
+    As UEFA’s investigation proceeds, many within the football community are watching closely, hoping for decisive action that reinforces the message that racism will not be tolerated at any level of the game.`,
+    featuredImage: "uploads/articles/ViníciusJúniorAlle.jpeg",
+    category: sportsCategory._id,
+    author: onyeagoroChinonso._id,
+    tags: ["sports", "entertainment",],
+    isTopStory: true,
+    published: true,
+    readTime: 5,
+    views: 1420,
+  },
   {
     title: "Germany Women Secure Strong Win in Olympic Hockey MatchMilan, Italy.",
     slug: "Germany-Women-Secure-Strong-Win-in-Olympic-Hockey-MatchMilan,-Italy." + Date.now(),
