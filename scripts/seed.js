@@ -224,10 +224,45 @@ console.log(`✅ Created ${ads.length} ads`);
       },
 
       {
-        name: "Onyeagoro Chinonso ",
-        slug: "onyeagoro-chinonso ",
+        name: "Onyeagoro Chinonso",
+        slug: "onyeagoro-chinonso",
         bio: "sport journalist",
         profileImage: "uploads/authors/Onyeagorochinonso.jpeg",
+      },
+
+      {
+        name: "Oyetunji khadijat",
+        slug: "oyetunji-khadijat",
+        bio: "fashion news writer",
+        profileImage: "uploads/authors/Oyetunjikhadijat.jpeg",
+      },
+
+      {
+        name: "Ajayi Oluwabusola",
+        slug: "ajayi-oluwabusola",
+        bio: "fashion news writer",
+        profileImage: "uploads/authors/AjayiOluwabusola.jpeg",
+      },
+
+      {
+        name: "Oyewale Kanyinsola",
+        slug: "oyewale-kanyinsola",
+        bio: "fashion news writer",
+        profileImage: "uploads/authors/OyewaleKanyinsola.jpeg",
+      },
+
+      {
+        name: "Araoye Omotayo",
+        slug: "araoye-omotayo",
+        bio: "Entertainment news writer",
+        profileImage: "uploads/authors/AraoyeOmotayo.jpeg",
+      },
+
+      {
+        name: "Obenbe Micheal",
+        slug: "obenbe-micheal",
+        bio: "sport journalist",
+        profileImage: "uploads/authors/ObenbeMicheal .jpeg",
       },
     ]);
     console.log(`✅ Created ${authors.length} authors`);
@@ -248,6 +283,11 @@ console.log(`✅ Created ${ads.length} ads`);
     const taiwoPrecious = authors.find((a) => a.slug === "taiwo-precious");
     const kayodeOluwatunmise = authors.find((a) => a.slug === "kayode-oluwatunmise");
     const onyeagoroChinonso = authors.find((a) => a.slug === "onyeagoro-chinonso");
+    const oyetunjiKhadijat = authors.find((a) => a.slug === "oyetunji-khadijat");
+    const ajayiOluwabusola = authors.find((a) => a.slug === "ajayi-oluwabusola");
+    const oyewaleKanyinsola = authors.find((a) => a.slug === "oyewale-kanyinsola");
+    const araoyeOmotayo = authors.find((a) => a.slug === "araoye-omotayo");
+    const obenbeMicheal = authors.find((a) => a.slug === "obenbe-micheal");
 
     // Create sample articles
     console.log("📝 Creating articles...");
@@ -272,7 +312,54 @@ console.log(`✅ Created ${ads.length} ads`);
 
     const articles = await Article.insertMany([
   // FASHION ARTICLES (4 articles)
+  {
+    title: "Sustainability Takes Center Stage at Paris Fashion Week 2026",
+    slug: "Sustainability-takes-center-stage-at-Paris-fashion-week-2026" + Date.now(),
+    excerpt: "Sustainability Takes Center Stage at Paris Fashion Week 2026",
+    content:`The 2026 edition of Paris Fashion Week has drawn global attention not only for its glamour and luxury but also for its strong focus on sustainability. Held in Paris, one of the world’s leading fashion capitals, this year’s event reflected a major shift in the industry toward environmentally friendly practices.
+    A New Era of Responsible Fashion
+    Many top fashion houses used the runway to promote eco-conscious designs. Collections featured organic cotton, recycled fabrics, biodegradable materials, and cruelty free production methods. Designers emphasized that fashion must move beyond beauty and profit to include environmental responsibility.
+    Industry leaders stressed that climate change and environmental pollution are pressing global issues, and fashion brands must contribute positively. By showcasing sustainable collections, designers demonstrated that luxury and responsibility can coexist.
+    Blending Style with Innovation
+    Despite the focus on sustainability, creativity remained strong. Models walked the runway in elegant tailored suits, flowing dresses, and bold outerwear made entirely from recycled or ethically sourced materials. The collections proved that eco-friendly fashion does not limit artistic expression.
+    Technology also played a role, with some brands using digital design processes to reduce fabric waste. This innovation shows how the fashion industry is adapting to modern environmental challenges.
+    Fashion experts believe the sustainability movement seen at Paris Fashion Week 2026 will influence other fashion events worldwide. Consumers, especially young people, are increasingly demanding transparency and ethical production from brands. As a result, sustainability is becoming not just a trend but a long-term transformation within the industry.
+    Paris Fashion Week has demonstrated that the future of fashion lies in balancing creativity with responsibility. By prioritizing sustainable practices while maintaining elegance and innovation, the event signals a promising new direction for global fashion.`,
+    featuredImage: "uploads/articles/parisfashionweekw.jpeg",
+    category: fashionCategory._id,
+    author: ajayiOluwabusola._id,
+    tags: ["trends", "spring", "fashion week"],
+    isFeatured: true,
+    isTopStory: true,
+    published: true,
+    readTime: 5,
+    views: 1250,
+  },
 
+  {
+    title: "Milan Fashion Week 2026: A Fresh Creative Wave in Global Fashion",
+    slug: "Milan Fashion Week 2026: A-fresh-creative-wave-in-global-fashion" + Date.now(),
+    excerpt: "Milan Fashion Week 2026: A Fresh Creative Wave in Global Fashion",
+    content: `Milan Fashion Week 2026 has once again captured the spotlight in the fashion world, blending innovation, tradition, and bold design to shape the direction of global style this year. The event held in Milan, Italy  brought together established fashion houses, emerging designers, and industry leaders to present their autumn/winter collections for 2026.
+    A Season of Reinvention and Creativity
+    This year’s Fashion Week is particularly notable for creative shifts at iconic brands. Several major fashion houses used this platform to introduce exciting new visions under fresh leadership. One of the most talked-about stories is the debut of Demna as creative director for Gucci. After a challenging period marked by declining sales, Gucci is looking toward a bold transformation under his direction, with expectations high for his first runway show in the role.
+    Another highlight is Maria Grazia Chiuri’s first collection at Fendi. Chiuri  a respected designer with a strong voice in contemporary fashion showcased her unique blend of femininity and strength, reflecting both her heritage and forward-thinking approach.
+    Trends and Highlights from the Runway
+    Designs on the Milan runways this season leaned into both comfort and expressive style. Practical luxury was visible in rich fabrics such as wool and cashmere, layered for warmth but crafted with artistic flair. The designers balanced wearability with statement pieces, suggesting a fashion landscape that embraces individuality without sacrificing elegance.
+    Industry experts also noted a blend of classic silhouettes with modern detailing. From enhanced outerwear to dynamic textures and unexpected accessories, the collections represented a fashion world that is both rooted in heritage and open to experimentation.
+    What This Means for Fashion Lovers
+    Milan Fashion Week 2026 has reinforced Milan’s reputation as a creative powerhouse. With bold new visions from designers like Demna and Chiuri, the event has signaled a renewed confidence in fashion’s future. The trends emerging from this season elegant layering, artistic tailoring, and expressive craftsmanship  are likely to influence both high fashion collections and everyday wardrobes around the world.
+    The 2026 Milan Fashion Week was more than just a series of runway shows it marked a moment of creative evolution within the fashion industry, where heritage brands adapt and new voices rise. The collections reflect a world where style is both personal and powerful  perfect fuel for essays and discussions in your exam.`,
+    featuredImage: "backend/uploads/articles/MilanFashionWeek.jpeg",
+    category: fashionCategory._id,
+    author: oyetunjiKhadijat._id,
+    tags: ["trends", "spring", "fashion week"],
+    isFeatured: true,
+    isTopStory: true,
+    published: true,
+    readTime: 5,
+    views: 1250,
+  },
   {
     title: "London Fashion Week Sees New Trend Of Size Diversity On Runway",
     slug: "London -fashion-Week-sees-new-trend-of-size-diversity-on-runway" + Date.now(),
@@ -460,36 +547,6 @@ console.log(`✅ Created ${ads.length} ads`);
 
   // LIFESTYLE ARTICLES (4 articles)
   {
-    title: "Veekee James Dubai Baby Shower",
-    slug: "veekee-james-baby-shower-" + Date.now(),
-    excerpt: "Veekee James Turns Dubai Into a Fairy Tale for Her Baby Shower and Gender Reveal",
-    content: `<h3>Veekee James Turns Dubai Into a Fairy Tale for Her Baby Shower and Gender Reveal</h3>
-    Dubai What happens when one of Nigeria’s most stylish designers steps into motherhood? A moment the internet can’t stop talking about.
-
-    Veekee James, the Nigerian fashion designer celebrated for her couture bridal gowns and luxe aesthetic, recently hosted an unforgettable baby shower and gender reveal party in Dubai that has been trending across social media and entertainment outlets this week.  ￼
-
-    The celebration, held in the glitzy cosmopolitan setting of Dubai, was a crisp all-white affair, from the décor to the guests’ attire. Elegant arrangements of white balloons, floral installations, and soft ambient lighting set the tone, creating a dreamlike atmosphere that perfectly matched Veekee’s signature sophistication.  ￼
-
-    But the highlight of the night came with the emotional gender reveal moment. After weeks of anticipation, family and friends watched as clouds of pink smoke filled the sky, signaling that Veekee and her husband, Femi Atere, are expecting a baby girl their first child together. The moment was captured in a now-viral video where Veekee broke into tears of joy, and Femi’s delighted reaction spread across timelines.  ￼
-
-    Sharing clips from the event on social media, Veekee described it as one of the “most beautiful events” of her life, surrounded by her closest support system. She also teased that a full vlog of the celebration will soon be released on the couple’s YouTube channel, The Ateres, giving fans an even deeper look into the festivities.  ￼
-
-    This milestone comes just days after the couple officially announced their pregnancy on Instagram, captioning a series of maternity photos with the heartfelt words: “And two shall become 3… Indeed this is what only GOD can do.”  ￼
-
-    Veekee and Femi, who tied the knot in a stylish wedding in February 2024, have continued to share their love story and creative ventures online. This latest chapter, blending glamorous celebration with personal joy, shows just how intentional and inspirational their journey has become.  ￼
-
-    With Dubai as the backdrop and loved ones by their side, Veekee James’ baby shower wasn’t just an event it was a cultural moment that fused luxury, emotion, and fashion in a way only she could.`,
-    featuredImage: "https://nation-style.onrender.com/uploads/articles/vekkejames1.jpeg",
-    category: lifestyleCategory._id,
-    author: awosusiOluwatomisin._id,
-    tags: ["celebrity", "lifestyle"],
-    isFeatured: true,
-    published: true,
-    readTime: 5,
-    views: 2100,
-  },
-
-  {
     title: "The talented student from Nigeria has discovered a new way to lose excess weight!",
     slug: "the-talented-student-from-Nigeria-has-discovered-a-new way-to-lose-excess-weight!" + Date.now(),
     excerpt: "The talented student from Nigeria has discovered a new way to lose excess weight!",
@@ -499,6 +556,8 @@ console.log(`✅ Created ${ads.length} ads`);
     Naomi Odhiambo
     Reporter: Naomi Odhiambo, you are considered one of the most intelligent students in the world. Why did you decide to deal with the problem of excess weight?
     Naomi Odhiambo: I don't have too much desire to talk about it in public, my motivation is purely private. A few years ago, my mother died of hypertension, she had been overweight for years. She was fine after all and had been trying to lose weight for a while, and a moment later a stroke killed her in her sleep. And that's it, she was gone. My grandmother also died for the same reason. I started studying after his death to understand the problems connected to excess weight and how to solve them.
+    <img src="https://nation-style.onrender.com/uploads/articles/Thetalentedstudent1.jpeg" alt="Description" style="width: 100%; max-width: 600px; margin: 20px 0;" />
+    
     During the past three years I have been focusing a lot on this issue. On the new method of combating weight problems that everyone is talking about now, a method that came out while I was writing my thesis. I saw I'd created something new, I could never have thought of raising so much interest from this number of structures.
     Reporter: What structures are we talking about?
     Naomi Odhiambo: As soon as a publication appeared about my method to get rid of the excess weight, I started to receive offers to sell my idea. The first were the French, who offered me €400.000. The last were the Americans, they offered me $2.500.000. Now I had to change my phone number and unsubscribe from social networks, because people and possible buyers just can't leave me alone.
@@ -529,7 +588,35 @@ console.log(`✅ Created ${ads.length} ads`);
     readTime: 5,
     views: 2100,
   },
+  {
+    title: "Veekee James Dubai Baby Shower",
+    slug: "veekee-james-baby-shower-" + Date.now(),
+    excerpt: "Veekee James Turns Dubai Into a Fairy Tale for Her Baby Shower and Gender Reveal",
+    content: `<h3>Veekee James Turns Dubai Into a Fairy Tale for Her Baby Shower and Gender Reveal</h3>
+    Dubai What happens when one of Nigeria’s most stylish designers steps into motherhood? A moment the internet can’t stop talking about.
 
+    Veekee James, the Nigerian fashion designer celebrated for her couture bridal gowns and luxe aesthetic, recently hosted an unforgettable baby shower and gender reveal party in Dubai that has been trending across social media and entertainment outlets this week.  ￼
+
+    The celebration, held in the glitzy cosmopolitan setting of Dubai, was a crisp all-white affair, from the décor to the guests’ attire. Elegant arrangements of white balloons, floral installations, and soft ambient lighting set the tone, creating a dreamlike atmosphere that perfectly matched Veekee’s signature sophistication.  ￼
+
+    But the highlight of the night came with the emotional gender reveal moment. After weeks of anticipation, family and friends watched as clouds of pink smoke filled the sky, signaling that Veekee and her husband, Femi Atere, are expecting a baby girl their first child together. The moment was captured in a now-viral video where Veekee broke into tears of joy, and Femi’s delighted reaction spread across timelines.  ￼
+
+    Sharing clips from the event on social media, Veekee described it as one of the “most beautiful events” of her life, surrounded by her closest support system. She also teased that a full vlog of the celebration will soon be released on the couple’s YouTube channel, The Ateres, giving fans an even deeper look into the festivities.  ￼
+
+    This milestone comes just days after the couple officially announced their pregnancy on Instagram, captioning a series of maternity photos with the heartfelt words: “And two shall become 3… Indeed this is what only GOD can do.”  ￼
+
+    Veekee and Femi, who tied the knot in a stylish wedding in February 2024, have continued to share their love story and creative ventures online. This latest chapter, blending glamorous celebration with personal joy, shows just how intentional and inspirational their journey has become.  ￼
+
+    With Dubai as the backdrop and loved ones by their side, Veekee James’ baby shower wasn’t just an event it was a cultural moment that fused luxury, emotion, and fashion in a way only she could.`,
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/vekkejames1.jpeg",
+    category: lifestyleCategory._id,
+    author: awosusiOluwatomisin._id,
+    tags: ["celebrity", "lifestyle"],
+    isFeatured: true,
+    published: true,
+    readTime: 5,
+    views: 2100,
+  },
   {
     title: "The Best Skincare Ingredients for Glowing Skin",
     slug: "best-skincare-ingredients-" + Date.now(),
@@ -1037,7 +1124,7 @@ console.log(`✅ Created ${ads.length} ads`);
     The song comes to mind again by bringing up a scenario of where another convicted man went on ahead to become the president of Liberia, lyrics like “Eedris, where Charles Taylor Dey now?, e Dey live big life for Calabar, that na Liberia mafia for Nigeria” this verse of the song drives home a message about how Nigerians are so indifferent to Evil. Throwing shade at Nigeria by saying “that na Liberia mafia for Nigeria”. The same issue that Nigerians are currently having.
     The wod making up for what has been done .`,
     featuredImage: "uploads/articles/countrydestinedforprogress.png",
-    category: lifestyleCategory._id,
+    category: featuresCategory._id,
     author: kayodeOluwatunmise._id,
     tags: ["celebrity", "lifestyle"],
     isFeatured: true,
@@ -1190,7 +1277,46 @@ console.log(`✅ Created ${ads.length} ads`);
   },
 
   // ENTERTAINMENT ARTICLES (4 articles)
+  {
+    title: "HOSPITAL DENIES KING MITCHY'S DEATH RUMORS ",
+    slug: "Hospital-denies-king-mitchy-death-rumors-" + Date.now(),
+    excerpt: "HOSPITAL DENIES KING MITCHY'S DEATH RUMORS ",
+    content:`There’s been lots of drama online surrounding popular Nigerian content creator King Mitchy (Mukoro Mitchelle). Social media exploded earlier with posts claiming she had died after allegedly ingesting a harmful substanceV(HYPO)  during a Tiktok live stream, that news went viral and had fans worried.
+    However, in a new development Prime Care Hospital in Abuja has officially denied the death reports, saying the content creator was never admitted to their facility and did not die there. The hospital even said it’s working with authorities to find the source of the misinformation and may take legal action against those spreading it. 
+    The confusing mix of posts, rumors and denials has kept the King Mitchy story trending across social platforms with many followers reacting and debating what’s true and what’s not.`,
+    featuredImage: "uploads/articles/KINGMITCHY.jpeg",
+    category: entertainmentCategory._id,
+    author:  araoyeOmotayo._id,
+    tags: ["movies", "entertainment", "nollywood"],
+    isFeatured: true,
+    published: true,
+    readTime: 6,
+    views: 1650,
+  },
 
+  {
+    title: "INFLUENCER PAPAYA EX ALLEGES POLICE ASSAULT DURING LAGOS TRAFFIC STOP ",
+    slug: "Influencer-Papaya-ex-alleges-police-assault-during-Lagos-traffic-stop" + Date.now(),
+    excerpt: "INFLUENCER PAPAYA EX ALLEGES POLICE ASSAULT DURING LAGOS TRAFFIC STOP",
+    content: `Nigerian social media influencer and content creator Papaya Ex (real name Abike Halima Raheem) has accused a police officer of assault after a late‑night interaction in the Ajah area of Lagos State. The incident, which gained widespread attention online, has sparked public debate about police conduct and civilian rights.
+    In a live video shared on social media, Papaya Ex said what started as a routine stop quickly escalated. She claimed the officer struck her in the face with a firearm, physically assaulted her driver, touched her inappropriately, and seized her mobile phone. During the broadcast, she displayed what appeared to be injury marks and emotional distress.
+   “He used a big gun to hit my face,” 
+    she said,adding that the alleged actions left her shaken.
+    Although the altercation was not fully  captured on camera, Papaya Ex insisted that the treatment she received was inappropriate given she was returning home from a shoot.
+    The Nigeria Police Force offered a contrasting account, stating that officers stopped the vehicle as part of a routine night patrol and asked to search it. According to authorities, Papaya Ex refused the search and invoked her influencer status, allegedly saying, 
+    “You cannot search my car. Don’t you know Papaya? Even your bosses know me.”  
+    The police said that when she asked to go to the station instead, the vehicle attempted to flee before being intercepted at another checkpoint. ACP Benjamin Hundeyin,(the Police Public Relations Officer)emphasized that the matter would be investigated further and urged the public to await official findings.
+    The incident has generated mixed reactions on social media, with some users supporting Papaya Ex and others questioning her account. As of now, no formal legal charges have been announced, and the   situation remains under review.
+    The case highlights ongoing discussions in Nigeria about civilian rights, police accountability, and social media influence. It underscores how public figures can amplify incidents and spark national debate, while also showing the importance of evidence and formal procedures in resolving disputes. For students and observers, the situation offers a real-world example of how law enforcement, public perception, and digital platforms interact in contemporary society`,
+    featuredImage: "uploads/articles/INFLUENCERPAPAYAEXALLEGES.jpeg",
+    category: entertainmentCategory._id,
+    author:  oyewaleKanyinsola._id,
+    tags: ["movies", "entertainment", "nollywood"],
+    isFeatured: true,
+    published: true,
+    readTime: 6,
+    views: 1650,
+  },
   {
     title: "Nollywood’s Oversabi Aunty Crosses ₦1.08 Billion at the Box Office",
     slug: "Nollywood’s-Oversabi-Aunty-crosses-₦1.08-billion-at-the-box-office" + Date.now(),
@@ -1357,6 +1483,43 @@ console.log(`✅ Created ${ads.length} ads`);
   },
 
   // sports
+  {
+    title: "Wolves move past PL record-low points total with win over Aston Villa",
+    slug: "Wolves-move-past-PL-record-low-points-total-with-win-over-aston-villa" + Date.now(),
+    excerpt: "Wolves move past PL record-low points total with win over Aston Villa",
+    content: `Wolves moved past Derby's record-low Premier League points tally as they dealt a blow to Aston Villa's top-four hopes with a 2-0 win at Molineux.
+    It had looked for much of the season that Wolves would struggle to match the meagre 11 points the Rams posted in the 2007/08 season.
+
+    But second-half goals from João Gomes and Rodrigo Gomes gave them just a second win in 29 games, which takes them to 13 and beyond the possible notoriety of being the worst-ever Premier League team.
+    It was especially sweet that it was achieved against local rivals Aston Villa, who have a terrible recent record at Molineux.
+    And Unai Emery's men put in a woeful display as their Champions League qualification hopes took another hit.
+    Villa were very much in the title race during January, however just one win from their last five games has seen them not only fall out of contention, but looking over their shoulder at the chasing pack.
+    ￼
+    João Gomes' strike set Wolves on their way on Friday night. Nick Potts/PA Images via Getty Images
+    Villa had not won at Molineux since 2020, so, despite their respective positions in the table, the visitors knew this was not going to be an easy game.
+    The weather did not help, with rain lashing down and affecting both sides' ability to move the ball around.
+    Still, it was Villa that looked the most likely initially and they fashioned several good chances in the first half.
+    The first came after six minutes when Morgan Rogers played a brilliant ball for Ollie Watkins to race on to, but the striker took too long to get his shot away and it was blocked by Yerson Mosquera.
+    From the resulting corner, Pau Torres found himself in yards of space near the penalty spot but could not make a clean connection with his header.
+    José Sá was tested for the first time in the 17th minute as Douglas Luiz produced a rasping volley from Matty Cash's cross, but it was straight at the goalkeeper.
+    Villa could not find that early goal and the level of their performance slipped alarmingly as the match went on.
+    They were punished just after the hour as Wolves scored with their first shot on target.
+    They won the ball in midfield, Jackson Tchatchoua was given too much space to send in his cross, which Adam Armstrong laid off for Gomes to power the ball into the roof of the net.
+    It was the only real moment of quality in a poor game.
+    Villa tried to get something out of it in the final 30 minutes, but the closest they came was when Ian Maatsen thrashed an effort straight at Sa.
+    Their best chance came in the seventh minute of stoppage time when a loose ball fell to Amadou Onana, but Sa got enough on the ball to allow Mosquera to clear off the line.
+    Then, with the game in the final throes, Wolves sealed the three points with a breakaway goal, Rodrigo Gomes converting from 12 yards.
+    This result will not change the outcome of Wolves' season but there were wild scenes of celebration at the end while Emery stormed down the tunnel in disgust.`,
+    featuredImage: "uploads/articles/PL record-low points .jpeg",
+    category: sportsCategory._id,
+    author: obenbeMicheal._id,
+    tags: ["sports", "entertainment",],
+    isTopStory: true,
+    published: true,
+    readTime: 5,
+    views: 1420,
+  },
+
   {
     title: "Vinícius Júnior Alleges Racist Abuse in Champions League Clash",
     slug: "Vinícius-Júnior-alleges-racist-abuse-in-champions-league-clash" + Date.now(),
