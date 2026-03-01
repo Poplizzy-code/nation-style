@@ -1308,7 +1308,7 @@ console.log(`✅ Created ${ads.length} ads`);
     The police said that when she asked to go to the station instead, the vehicle attempted to flee before being intercepted at another checkpoint. ACP Benjamin Hundeyin,(the Police Public Relations Officer)emphasized that the matter would be investigated further and urged the public to await official findings.
     The incident has generated mixed reactions on social media, with some users supporting Papaya Ex and others questioning her account. As of now, no formal legal charges have been announced, and the   situation remains under review.
     The case highlights ongoing discussions in Nigeria about civilian rights, police accountability, and social media influence. It underscores how public figures can amplify incidents and spark national debate, while also showing the importance of evidence and formal procedures in resolving disputes. For students and observers, the situation offers a real-world example of how law enforcement, public perception, and digital platforms interact in contemporary society`,
-    featuredImage: "uploads/articles/INFLUENCERPAPAYAEXALLEGES.jpeg",
+    featuredImage: "uploads/articles/papayaex.jpeg",
     category: entertainmentCategory._id,
     author:  oyewaleKanyinsola._id,
     tags: ["movies", "entertainment", "nollywood"],
