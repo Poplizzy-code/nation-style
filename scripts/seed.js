@@ -311,7 +311,69 @@ console.log(`✅ Created ${ads.length} ads`);
     // { name: 'ENTERTAINMENT', path: '/category/entertainment' },
 
     const articles = await Article.insertMany([
-  // FASHION ARTICLES (4 articles)
+  // FASHION ARTICLES 
+  {
+    title: "The Influence of Fashion on Identity and Self Expression",
+    slug: "how-clothing-relects-culture,-personality,-and,-social-change" + Date.now(),
+    excerpt: "How Clothing Reflects Culture, Personality, and Social Change",
+    content: `Fashion is more than just clothing. It is a powerful form of communication that allows     individuals to express their identity, culture, and personality without speaking a word. Throughout history, fashion has played an important role in shaping societies and influencing how people present themselves to the world. The clothes people wear often reflect their values, beliefs, social status, and even their mood.
+    In modern society, fashion has become a global industry that influences millions of people through media, celebrities, and social media platforms. Trends spread quickly across countries, and people adopt new styles as a way to feel connected to a larger community. At the same time, fashion allows individuals to maintain uniqueness and creativity in the way they dress.
+    This article explores how fashion influences identity, how culture shapes clothing styles, and how modern technology and social media continue to transform the fashion world.
+
+    One of the most important roles of fashion is self expression. People often use clothing to communicate who they are, what they believe in, and how they want others to perceive them. For example, someone who prefers bold colors and unique designs may want to show confidence and creativity, while someone who chooses simple and neutral outfits may want to express professionalism or simplicity.
+    Fashion also allows individuals to experiment with different identities. Young people especially explore different styles to discover what best represents their personality. Through clothing, individuals can express emotions, attitudes, and interests without needing to explain them verbally.
+    Because of this, fashion is often described as a visual language. The choices people make in clothing, accessories, and hairstyles all contribute to the story they present about themselves.
+
+    Culture has a strong influence on fashion. Traditional clothing in many societies reflects historical values, religious beliefs, and social customs. In many countries, cultural garments are worn during festivals, weddings, and other special ceremonies.
+    For instance, African fashion often incorporates colorful fabrics and patterns that represent heritage and identity. These designs can symbolize community, status, or historical traditions. In many cultures, clothing is not only about style but also about preserving history and honoring ancestors.
+    Globalization has also created opportunities for cultural exchange in fashion. Designers often blend elements from different cultures to create new styles that appeal to international audiences. While this encourages creativity, it also raises discussions about respecting cultural traditions and avoiding cultural appropriation.
+
+    Social media has significantly transformed the fashion industry. Platforms such as Instagram, TikTok, and Snapchat allow fashion trends to spread rapidly across the world. Influencers, celebrities, and everyday users share their outfits online, inspiring millions of followers to adopt similar styles.
+    Unlike in the past when fashion trends were mainly controlled by designers and fashion magazines, social media has made fashion more democratic. Anyone can become a fashion influencer by sharing creative and appealing content.
+    Young people in particular are strongly influenced by the fashion they see online. Many users follow fashion pages to learn styling tips, discover new brands, and stay updated with current trends.
+    Fashion and the Economy
+    The fashion industry is one of the largest industries in the world. It provides employment opportunities for designers, models, photographers, stylists, marketers, and retailers. Fashion companies also contribute significantly to global trade and economic development.
+    However, the industry also faces challenges. Issues such as fast fashion, environmental pollution, and unethical labor practices have raised concerns among consumers. As a result, many brands are now promoting sustainable fashion by producing eco friendly clothing and encouraging responsible consumption.
+    Consumers are becoming more aware of how their clothing choices impact the environment. This awareness has encouraged many people to support ethical brands that prioritize sustainability and fair labor practices.
+
+    The future of fashion is likely to be shaped by technology, sustainability, and digital innovation. Online shopping, virtual fashion shows, and digital clothing designs are becoming more common in the industry.
+    Technology is also improving how clothes are designed and produced. Some designers are experimenting with smart fabrics that can change color, regulate temperature, or monitor health conditions.
+    At the same time, sustainability will continue to be a major focus. Many designers are working to reduce waste and use environmentally friendly materials. Consumers are also beginning to prioritize quality over quantity when purchasing clothing.
+
+    Fashion is far more than an industry focused on appearance. It is a powerful tool for self expression, cultural representation, and social communication. Through clothing, individuals can express their identity, connect with their cultural heritage, and participate in global trends.
+    As technology continues to evolve and awareness about sustainability grows, the fashion industry will continue to transform. Despite these changes, the core purpose of fashion will remain the same: to allow people to express themselves creatively and confidently in the world around them.`,
+    featuredImage: "uploads/articles/The Influence of Fashion on Identity and Self Expression.jpeg",
+    category: fashionCategory._id,
+    author: olusogaFeyifunmi._id,
+    tags: ["trends", "spring", "fashion week"],
+    isFeatured: true,
+    isTopStory: true,
+    published: true,
+    readTime: 5,
+    views: 1250,
+  },
+
+  {
+    title: "Olandria Carthen and the Rise of a New Fashion Influence ",
+    slug: " a-modern-style-voice-shaping-fashion-culture-in-the-digital-age" + Date.now(),
+    excerpt: " A modern style voice shaping fashion culture in the digital age",
+    content: `In contemporary fashion culture, influence no longer belongs only to traditional models or  established designers. A new generation of personalities is redefining the language of style, and Olandria Carthen has quickly emerged as one of its most compelling figures. Rising to public attention through Love Island USA, Carthen transformed visibility into a powerful fashion presence that continues to capture editorial and digital attention.
+
+    What distinguishes Carthen within today’s fashion conversation is her intuitive sense of personal style. Her aesthetic blends refined silhouettes with confident glamour, creating a look that feels both aspirational and accessible. Rather than relying on predictable trends, she approaches fashion as a form of self expression, presenting looks that reflect individuality, confidence, and cultural awareness.
+
+    In the age of digital visibility, style travels instantly across platforms, and personalities like Carthen play an important role in shaping how fashion is interpreted by audiences. Her appearances and online presence demonstrate how fashion today functions not only as clothing but as storytelling. Through carefully chosen pieces and expressive styling, she communicates a narrative of bold femininity and modern elegance.
+
+    As fashion continues to evolve alongside media and technology, figures such as Olandria Carthen represent a broader shift in influence. She embodies a generation that understands the power of image, identity, and authenticity. For fashion observers and editors alike, her growing presence signals the arrival of a new voice in contemporary style culture.`,
+    featuredImage: "uploads/articles/Olandria Carthen and the Rise of a New Fashion Influencem.jpeg",
+    category: fashionCategory._id,
+    author: hoseaOyindamola._id,
+    tags: ["trends", "spring", "fashion week"],
+    isFeatured: true,
+    isTopStory: true,
+    published: true,
+    readTime: 5,
+    views: 1250,
+  },
   {
     title: "Sustainability Takes Center Stage at Paris Fashion Week 2026",
     slug: "Sustainability-takes-center-stage-at-Paris-fashion-week-2026" + Date.now(),
@@ -895,7 +957,56 @@ console.log(`✅ Created ${ads.length} ads`);
   },
 
   // NEWS ARTICLES (3 articles)
+  {
+    title: "PDP Leadership Crisis Deepens After Court Ruling",
+    slug:"Abuja,-Nigeria." + Date.now(),
+    excerpt: "Abuja, Nigeria",
+    content: `The leadership crisis within Nigeria’s main opposition party, the Peoples Democratic Party (PDP) has intensified following a ruling by the Court of Appeal of Nigeria that nullified the party’s 2025 national convention in Ibadan.
 
+    The convention, held in November 2025, had produced former minister Kabiru Tanimu Turaki as the party’s national chairman. 
+    However, the appellate court ruled that the convention violated electoral procedures because the party allegedly failed to conduct valid ward and state congresses and did not provide proper notice to the Independent National Electoral Commission (INEC).
+
+    The ruling effectively invalidated the leadership structure that emerged from the convention and has deepened divisions within the party.
+
+    The crisis has largely played out between factions aligned with Nyesom Wike, the Minister of the Federal Capital Territory and former governor of Rivers State, and another bloc associated with former vice president  Atiku Abubakar and Turaki.
+
+    Party leaders have since called for reconciliation to prevent further fragmentation of the opposition. Former Senate President Bukola Saraki urged members of the party to accept the court’s decision and focus on rebuilding unity ahead of the next electoral cycle.
+
+    Political analysts warn that the prolonged internal conflict could weaken the PDP’s capacity to serve as a credible opposition to the ruling All Progressives Congress (APC) ahead of the 2027 general elections, potentially reshaping Nigeria’s political landscape`,
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/PDP Leadership Crisis Deepens After Court Ruling.jpeg",
+    category: newsCategory._id,
+    author: faladeObafemi._id,
+    tags: ["news", "politics", "election"],
+    isBreaking: true,
+    isFeatured: true,
+    published: true,
+    readTime: 3,
+    views: 2500,
+  },
+  {
+    title: "Political Tensions Rise in Nigeria as Preparations for the 2027 Elections Begin",
+    slug:"Early-political-movements-and-policy-debates-signal-the-beginning-of-intense-preparations-for-Nigeria’s-2027-general-elections." + Date.now(),
+    excerpt: "Early political movements and policy debates signal the beginning of intense preparations for Nigeria’s 2027 general elections.",
+    content: `Political Tensions Rise in Nigeria as Preparations for the 2027 Elections *Begin* 
+    Nigeria’s political landscape is gradually heating up as political actors, government officials, and opposition parties begin positioning themselves ahead of the 2027 general elections. Recent developments across the country suggest that the coming political cycle may be marked by intense competition, policy debates, and growing public scrutiny of government actions.
+    One of the major political discussions currently gaining attention involves preparations for the 2027 elections and the conduct of political actors seeking public office. In Kaduna State, the government recently directed all political appointees who intend to contest in the upcoming elections to resign from their positions before participating in party primaries. The directive aligns with provisions of Nigeria’s Electoral Act, which requires public officials seeking elective positions to step down from their roles to avoid conflicts of interest. 
+    This move is seen by political observers as part of a broader effort to ensure transparency in the electoral process. However, it has also sparked conversations about the increasing number of politicians already preparing for campaigns, even though the election is still months away.
+    At the national level, debates about governance and policy implementation have also intensified. The African Democratic Congress (ADC), an opposition party, recently criticized the federal government over what it described as confusion in budget implementation and policy inconsistencies. According to the party, overlapping budgets and shifting policies have created challenges for government agencies and slowed development projects across the country. 
+    Meanwhile, political alliances and new movements are beginning to emerge as influential figures attempt to consolidate support ahead of the elections. A new political network has reportedly been formed to mobilize grassroots support for President Bola Ahmed Tinubu as discussions about a possible re-election campaign continue. 
+    Political analysts believe these early activities indicate that the race for 2027 may begin much earlier than expected. They also warn that if political actors focus too heavily on election strategies, it could distract from pressing national issues such as economic recovery, unemployment, and security.
+    In addition, concerns have been raised by the Independent National Electoral Commission (INEC) about ongoing disputes within political parties. According to the electoral body, internal conflicts within parties may undermine public confidence in the democratic process and contribute to voter apathy if not properly addressed.
+    For many Nigerian citizens, the unfolding political developments represent both an opportunity and a challenge. On one hand, increased political activity can strengthen democratic engagement. On the other hand, it raises questions about whether political leaders will prioritize governance or campaign ambitions.
+    As the country moves closer to the next general election, Nigerians are expected to closely watch how political parties, government officials, and emerging political movements shape the future of the nation’s democracy`,
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/Political Tensions Rise in Nigeria as Preparations for the 2027 Elections Begin .jpeg",
+    category: newsCategory._id,
+    author: taiwoPrecious._id,
+    tags: ["news", "politics", "election"],
+    isBreaking: true,
+    isFeatured: true,
+    published: true,
+    readTime: 3,
+    views: 2500,
+  },
   {
     title: "Failed Benin Coup Prompts ECOWAS Intervention in West Africa",
     slug: "Failed-Benin-coup-prompts-ECOWAS-intervention-in-West-Africa" + Date.now(),
@@ -1483,6 +1594,21 @@ console.log(`✅ Created ${ads.length} ads`);
   },
 
   // sports
+  {
+    title: "Estupiñán's Stunner Sparks Milan Madness!",
+    slug: "Milan-dends-city-rivalry,-snatches-1-0-win-0ver-inter-&-reignite-serie-a-title-race" + Date.now(),
+    excerpt: "Milan Dends City Rivalry, Snatches 1-0 Win Over Inter & Reignites Serie A Title Race",
+    content: `In a gripping Derby della Madonnina at San Siro on March 8, 2026, AC Milan edged out league leaders Inter Milan 1-0, completing their first Serie A double over their city rivals in 15 years. The decisive goal came in the 35th minute when left-back Pervis Estupiñán latched onto Youssouf Fofana's precise through ball, controlling it brilliantly before firing a powerful low shot into the near corner—his first for Milan and a historic strike as the first Ecuadorian to score in this fixture. The Rossoneri defended heroically thereafter, with Mike Maignan and the backline frustrating Inter's attacks despite the Nerazzurri's dominance in possession.
+    The win cuts Inter's lead at the top of Serie A to seven points with 10 games left, reigniting the title race and ending Inter's eight-match winning streak in the league. Milan celebrated wildly at full time, while Inter rued missed chances and a late disallowed effort. This result boosts Milan's momentum under Massimiliano Allegri and keeps the Scudetto dream alive for the Rossoneri faithful.`,
+    featuredImage: "uploads/articles/Estupiñán's Stunner Sparks Milan Madness.jpeg",
+    category: sportsCategory._id,
+    author: oyetundeHabeeb._id,
+    tags: ["sports", "entertainment",],
+    isTopStory: true,
+    published: true,
+    readTime: 5,
+    views: 1420,
+  },
   {
     title: "Wolves move past PL record-low points total with win over Aston Villa",
     slug: "Wolves-move-past-PL-record-low-points-total-with-win-over-aston-villa" + Date.now(),
