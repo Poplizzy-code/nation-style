@@ -49,6 +49,10 @@ const articleSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   },
+  isCoverStory: {
+    type: Boolean,
+    default: false
+  },
   readTime: {
     type: Number,
     default: 5
@@ -76,6 +80,15 @@ articleSchema.index({ slug: 1 });
 articleSchema.index({ category: 1 });
 articleSchema.index({ author: 1 });
 articleSchema.index({ createdAt: -1 });
+articleSchema.index({ isCoverStory: 1 });
+articleSchema.index({ isFeatured: 1 });
+articleSchema.index({ isTopStory: 1 });
+articleSchema.index({ isBreaking: 1 });
 
-// ✅ Fixed to avoid OverwriteModelError
+// Update the updatedAt field before saving
+articleSchema.pre('save', function(next) {
+  this.updatedAt = Date.now();
+  next();
+});
+
 module.exports = mongoose.models.Article || mongoose.model('Article', articleSchema);
