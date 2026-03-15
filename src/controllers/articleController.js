@@ -16,7 +16,18 @@ const generateSlug = (title) => {
 // GET all articles
 exports.getAllArticles = async (req, res) => {
   try {
-    const { category, author, page = 1, limit = 10, search, featured, breaking, topStories } = req.query;
+    const { 
+      category, 
+      author, 
+      page = 1, 
+      limit = 10, 
+      search, 
+      featured, 
+      breaking, 
+      topStories,
+      isCoverStory  // ✅ ADDED
+    } = req.query;
+    
     const skip = (page - 1) * limit;
     let query = { published: true };
 
@@ -25,6 +36,7 @@ exports.getAllArticles = async (req, res) => {
     if (featured !== undefined) query.isFeatured = featured === 'true';
     if (breaking !== undefined) query.isBreaking = breaking === 'true';
     if (topStories !== undefined) query.isTopStory = topStories === 'true';
+    if (isCoverStory !== undefined) query.isCoverStory = isCoverStory === 'true';  // ✅ ADDED
 
     if (search) {
       query.$or = [
@@ -80,7 +92,20 @@ exports.getArticleBySlug = async (req, res) => {
 // CREATE article
 exports.createArticle = async (req, res) => {
   try {
-    const { title, excerpt, content, category, author, tags, isBreaking, isFeatured, isTopStory, readTime } = req.body;
+    const { 
+      title, 
+      excerpt, 
+      content, 
+      category, 
+      author, 
+      tags, 
+      isBreaking, 
+      isFeatured, 
+      isTopStory,
+      isCoverStory,  // ✅ ADDED
+      readTime 
+    } = req.body;
+    
     const featuredImage = req.file?.path;
 
     if (!title || !excerpt || !content || !category || !author || !featuredImage)
@@ -106,6 +131,7 @@ exports.createArticle = async (req, res) => {
       isBreaking: isBreaking === 'true',
       isFeatured: isFeatured === 'true',
       isTopStory: isTopStory === 'true',
+      isCoverStory: isCoverStory === 'true',  // ✅ ADDED
       readTime: readTime || 5,
       views: 0,
     });
@@ -124,7 +150,19 @@ exports.createArticle = async (req, res) => {
 exports.updateArticle = async (req, res) => {
   try {
     const { id } = req.params;
-    const { title, excerpt, content, category, author, tags, isBreaking, isFeatured, isTopStory, readTime } = req.body;
+    const { 
+      title, 
+      excerpt, 
+      content, 
+      category, 
+      author, 
+      tags, 
+      isBreaking, 
+      isFeatured, 
+      isTopStory,
+      isCoverStory,  // ✅ ADDED
+      readTime 
+    } = req.body;
 
     const article = await Article.findById(id);
     if (!article) return res.status(404).json({ error: 'Article not found' });
@@ -138,6 +176,7 @@ exports.updateArticle = async (req, res) => {
     if (isBreaking !== undefined) article.isBreaking = isBreaking === 'true';
     if (isFeatured !== undefined) article.isFeatured = isFeatured === 'true';
     if (isTopStory !== undefined) article.isTopStory = isTopStory === 'true';
+    if (isCoverStory !== undefined) article.isCoverStory = isCoverStory === 'true';  // ✅ ADDED
     if (readTime) article.readTime = readTime;
     if (req.file) article.featuredImage = req.file.path;
 
@@ -200,6 +239,23 @@ exports.getTopStories = async (req, res) => {
       .populate('author', 'name slug')
       .sort({ views: -1 })
       .limit(5);
+
+    res.json({ success: true, data: articles });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+// ✅ NEW: Get Cover Stories
+exports.getCoverStories = async (req, res) => {
+  try {
+    const { limit = 3 } = req.query;
+    
+    const articles = await Article.find({ isCoverStory: true, published: true })
+      .populate('category', 'name slug')
+      .populate('author', 'name slug profileImage')
+      .sort({ createdAt: -1 })
+      .limit(parseInt(limit));
 
     res.json({ success: true, data: articles });
   } catch (error) {
