@@ -264,6 +264,13 @@ console.log(`✅ Created ${ads.length} ads`);
         bio: "sport journalist",
         profileImage: "uploads/authors/ObenbeMicheal .jpeg",
       },
+
+      {
+        name: "Adekola Eniola",
+        slug: "adekola-eniola",
+        bio: "public relations specialist, politics news writer",
+        profileImage: "uploads/authors/Adekola Eniola.jpeg",
+      },
     ]);
     console.log(`✅ Created ${authors.length} authors`);
 
@@ -288,6 +295,7 @@ console.log(`✅ Created ${ads.length} ads`);
     const oyewaleKanyinsola = authors.find((a) => a.slug === "oyewale-kanyinsola");
     const araoyeOmotayo = authors.find((a) => a.slug === "araoye-omotayo");
     const obenbeMicheal = authors.find((a) => a.slug === "obenbe-micheal");
+    const adekolaEniola = authors.find((a) => a.slug === "adekola-eniola");
 
     // Create sample articles
     console.log("📝 Creating articles...");
@@ -440,7 +448,7 @@ console.log(`✅ Created ${ads.length} ads`);
     The collection was in collaboration with the high-street brand Pull&Bear, which introduced an accessible dimension to Vitto's aesthetic. While her hallmark sculptural thinking remained visible in seam placement and hardware accents, the pieces felt wearable: silk slips, fluid skirts and soft jersey dresses that could translate beyond the runway.When asked which woman inspires her most stylistically, Vitto resisted naming an individual. "There's not one single woman," she said, "it's more the idea of a collective of women that represent something intense and beautiful." That collective was reflected in the show's casting and repetition of silhouettes across different body types.If transparency and fluid-finished dressing are emerging as defining trends this season, then Vitto's show offered a deeper reading of both.The fabrics may have been sheer, but the message was opaque: design begins with the body in front of you.`,
     featuredImage: "https://nation-style.onrender.com/uploads/articles/LondonFashionWeek.jpeg",
     category: fashionCategory._id,
-    author: olusogaFeyifunmi._id,
+    author: adekolaEniola._id,
     tags: ["trends", "spring", "fashion week"],
     isFeatured: false,
     isTopStory: false,
@@ -959,6 +967,32 @@ console.log(`✅ Created ${ads.length} ads`);
   },
 
   // NEWS ARTICLES (3 articles)
+  {
+    title: "Plateau Adjusts LG Election Timetable, Shifts Party Primaries",
+    slug:"New-schedule-extends-primaries-deadline-and-outlines-pdated-timeline-for-nominations-and-campaigns." + Date.now(),
+    excerpt: "New schedule extends primaries deadline and outlines updated timeline for nominations and campaigns.",
+    content: `The Plateau State Independent Electoral Commission has approved adjustments to the timetable and schedule of activities for the conduct of the 2026 Local Government Elections in the state, extending the period for political parties to conduct their primaries.
+    The electoral body made the disclosure on Thursday in a statement signed by its Secretary, Pam Davou.
+    According to Davou, the repeal of the Electoral Act 2022 and the enactment of the Electoral Act 2026 necessitated the adjustments.
+    He said under the revised schedule, political parties will now conduct their primaries from Saturday, March 7 to Tuesday, April 7, 2026, replacing the earlier closing date of March 12, 2026.
+    He added that the collection of nomination forms by political parties will be from April 8, to April 10, 2026, while the submission of nomination forms to the commission is scheduled for April 13 ,to April 17, 2026.
+    According to the revised timetable, the list of qualified candidates will be published on May 20, 2026, while appeals by aggrieved aspirants will be received on May 21 and heard on May 22, 2026.
+    The statement added: “The publication of personal particulars of candidates will hold on April 20, 2026, followed by the screening of Chairmanship candidates and their running mates from April 22, to April 25, 2026, and the screening of Councillorship candidates from April 26 to April 30, 2026.
+    The final list of nominated candidates will be published on June 8, 2026, while political campaigns will officially commence on June 9, 2026.
+    Other key activities in the timetable remain unchanged, including the publication of the official register of voters on July 21, 2026, the submission of names of polling agents by political parties on August 12, 2026, and the publication of the Notice of Poll on August 17, 2026.
+    Political campaigns will end at midnight on Monday, September 7, 2026, ahead of the elections scheduled to hold in the seventeen (17) Local Government Areas of Plateau State on Wednesday, September 9, 2026 between 8am and 3pm.”
+    The statement reassured political parties, stakeholders, and the general public of its commitment to conducting free, fair, credible and inclusive elections in accordance with the law and global best practices.
+    The Commission urges all political parties to strictly comply with the revised timetable and other guidelines issued for the conduct of the elections,” the statement added.`,
+    featuredImage: "https://nation-style.onrender.com/uploads/articles/Plateau Adjusts LG Election Timetable, Shifts Party Primaries.jpeg",
+    category: newsCategory._id,
+    author: adekolaEniola._id,
+    tags: ["news", "politics", "election"],
+    isBreaking: true,
+    isFeatured: true,
+    published: true,
+    readTime: 3,
+    views: 2500,
+  },
   {
     title: "PDP Leadership Crisis Deepens After Court Ruling",
     slug:"Abuja,-Nigeria." + Date.now(),
